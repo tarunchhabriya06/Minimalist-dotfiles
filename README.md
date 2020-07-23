@@ -6,6 +6,7 @@ These are my Dotfile for i3 window manager and it may expand as i venture into o
 ### 1) Installation 
 
 Arch and Arch based system:
+
 note: I have used Manjaro LXDE edition(arch based) for this setup with zsh shell 
 
 1) System update
