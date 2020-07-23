@@ -28,7 +28,7 @@ git clone https://github.com/tarunchhabriya06/Minimalist-dotfiles.git
 ```
 then 
 ```
-cd Minimalist-dotfiles
+cd Minimalist-dotfiles/.config
 ```
 finally copy the contents of that folder with the command below 
 ```
@@ -38,10 +38,12 @@ and you are done!!!
 
 
 Note: for in the polybar folder there is a subfolder named fonts copy the contents of that folder with the commands below after execcuting all the commands above.
+
 1)
 ```
 cd ~/.config/polybar/fonts
 ```
+
 2)
 ```
 cp -r * ~/.local/share/fonts
