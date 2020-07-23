@@ -22,6 +22,28 @@ yay -S ttf-yosemite-san-francisco-font-git betterlockscreen
 ```
 ### 2) Setup 
 
+Clone the repository with command below 
+```
+git clone https://github.com/tarunchhabriya06/Minimalist-dotfiles.git
+```
+then 
+```
+cd Minimalist-dotfiles
+```
+finally copy the contents of that folder with the command below 
+```
+cp -r * ~/.config
+```
+and you are done!!!
 
 
-Note: for in the polybar folder there is a subfolder named fonts copy the contents of that folder with the commands below
+Note: for in the polybar folder there is a subfolder named fonts copy the contents of that folder with the commands below after execcuting all the commands above.
+1)
+```
+cd ~/.config/polybar/fonts
+```
+2)
+```
+cp -r * ~/.local/share/fonts
+```
+
