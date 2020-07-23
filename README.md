@@ -28,7 +28,15 @@ git clone https://github.com/tarunchhabriya06/Minimalist-dotfiles.git
 ```
 then 
 ```
-cd Minimalist-dotfiles/.config
+cd Minimalist-dotfiles
+```
+and 
+```
+mv .Xresources ~/
+```
+then 
+```
+cd .config
 ```
 finally copy the contents of that folder with the command below 
 ```
