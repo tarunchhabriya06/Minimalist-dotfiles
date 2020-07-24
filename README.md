@@ -1,5 +1,5 @@
 # Minimalist-dotfiles
-These are my Dotfile for i3 window manager and it may expand as i venture into other tiling window manager but even if you are not using arch based system you can replicate my setup you just have to replace pacman with your package manager for example if you are using ubuntu based systems you just have to replace the command with apt-get install 
+These are my Dotfile for i3 window manager and it may expand as i venture into other tiling window manager but even if you are not using arch based system you can replicate my setup you just have to replace pacman with your package manager for example if you are using ubuntu based systems you just have to replace the command with apt-get install and after that if you can't find a specific package just google it and you  will find that package
 
 ## i3 Setup
 
