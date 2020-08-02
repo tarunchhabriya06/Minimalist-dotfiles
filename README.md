@@ -31,17 +31,18 @@ then
 ```
 cd Minimalist-dotfiles
 ```
-and 
+finally copy the contents of that folder with the commands below 
 ```
-mv .Xresources ~/
+cp -r i3 ~/.config
 ```
-then 
 ```
-cd .config
+cp -r rofi ~/.config
 ```
-finally copy the contents of that folder with the command below 
 ```
-cp -r * ~/.config
+cp -r polybar ~/.config
+```
+```
+cp .Xresources ~/
 ```
 and you are done!!!
 
