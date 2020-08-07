@@ -8,6 +8,13 @@
  *
  */
 
+configuration {
+  show-icons: true;
+  drun-display-format: "{icon} {name}";
+  display-run: " ";
+  display-drun: " ";
+  display-window: " ";
+}
 
 * {
   black:      #000000;
