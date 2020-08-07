@@ -67,6 +67,7 @@ bindsym $mod+Shift+q kill
 # start Rofi (a program launcher)
 bindsym $mod+d exec rofi -show drun
 bindsym $mod+g exec rofi -show run
+bindsym $mod+c exec rofi -show window
 
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
@@ -109,7 +110,7 @@ bindsym $mod+f fullscreen toggle
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+bindsym $mod+Control+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -175,6 +176,7 @@ assign [class="Io.github.celluloid_player.Celluloid"] $ws4
 assign [class="Lollypop"] $ws4
 assign [class="Lutris"] $ws4
 assign [class="Mainwindow.py"] $ws4
+assign [class="Spotify"] $ws4
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -182,6 +184,19 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+set $session " (E)xit  (L)ock  (P)oweroff  (R)eboot"
+mode  $session {
+         bindsym e exec $psst i3-msg exit; mode "default"
+         bindsym l exec $psst betterlockscreen -l dim; mode "default"
+         bindsym p exec $psst systemctl poweroff; mode "default"
+         bindsym r exec $psst systemctl reboot; mode "default"
+
+         bindsym q mode "default"
+         bindsym Escape mode "default"
+}
+
+bindsym $mod+e mode $session
+
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
