@@ -183,20 +183,7 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
-set $session " (E)xit  (L)ock  (P)oweroff  (R)eboot"
-mode  $session {
-         bindsym e exec $psst i3-msg exit; mode "default"
-         bindsym l exec $psst betterlockscreen -l dim; mode "default"
-         bindsym p exec $psst systemctl poweroff; mode "default"
-         bindsym r exec $psst systemctl reboot; mode "default"
-
-         bindsym q mode "default"
-         bindsym Escape mode "default"
-}
-
-bindsym $mod+e mode $session
-
+bindsym $mod+Shift+e exec /home/tarun/.config/polybar/scripts/powermenu
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
