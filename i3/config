@@ -13,7 +13,7 @@
 set $myterminal "termite" 
 set $mod Mod4
 set $alt Mod1
-set $bg-color 	         #1c1f26
+set $bg-color 	         #EF7F00
 set $inactive-bg-color   #1c1f26
 set $text-color          #f3f4f5
 set $inactive-text-color #676E7D
@@ -214,10 +214,10 @@ bindsym $mod+r mode "resize"
 
 # window colors
 #                       border              background         text                 indicator
-client.focused          $bg-color           $bg-color          $text-color          #0000fa
+client.focused          $bg-color          $bg-color          $text-color           #0000fa
 client.unfocused        $inactive-bg-color $inactive-bg-color $inactive-text-color  #0000fa
 client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color  #0000fa
-client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #0000fa
+client.urgent           $urgent-bg-color   $urgent-bg-color   $text-color           #0000fa
 
 hide_edge_borders both
 
