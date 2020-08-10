@@ -15,7 +15,7 @@ sudo pacman -Syu
 ```
 2) i3 and other dependencies installation 
 ```
-sudo pacman -S i3-gaps polybar rofi flameshot blueman network-manager-applet ttf-font-icons awesome-terminal-fonts nitrogen compton thunar mate-terminal xprop
+sudo pacman -S i3-gaps polybar rofi flameshot blueman network-manager-applet ttf-font-icons awesome-terminal-fonts nitrogen compton thunar termite xprop
 ```
 Other dependencies on AUR 
 ```

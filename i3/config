@@ -10,7 +10,7 @@
 #
 
 # Preset Variable
-set $myterminal "mate-terminal" 
+set $myterminal "termite" 
 set $mod Mod4
 set $alt Mod1
 set $bg-color 	         #1c1f26
