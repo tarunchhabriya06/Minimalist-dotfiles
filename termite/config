@@ -45,7 +45,7 @@ resize_grip = false
 # ====================================
 [colors]
 
-background 		= rgba(38, 50, 56, 0.75)
+background 		= rgba(38, 50, 56, 0.90)
 foreground 		= #eceff1
 
 color0  			= #263238
