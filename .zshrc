@@ -59,5 +59,6 @@ alias p10k-update='yay -Syu --noconfirm --needed zsh-theme-powerlevel10k-git'
 alias ll='ls -l'
 alias la='ls -a'
 alias lla='ls -la'
+alias grep='grep --color'
 
 export TERM=xterm-256color
