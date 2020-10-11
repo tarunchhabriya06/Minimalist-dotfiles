@@ -15,11 +15,11 @@ sudo pacman -Syu
 ```
 2) i3 and other dependencies installation 
 ```
-sudo pacman -S i3-gaps polybar rofi flameshot blueman network-manager-applet ttf-font-icons awesome-terminal-fonts nitrogen compton thunar termite xprop
+sudo pacman -S i3-gaps polybar rofi flameshot blueman network-manager-applet awesome-terminal-fonts nitrogen compton thunar termite xorg-xprop
 ```
 Other dependencies on AUR 
 ```
-yay -S ttf-yosemite-san-francisco-font-git betterlockscreen 
+yay -S ttf-yosemite-san-francisco-font-git betterlockscreen ttf-font-icons
 ```
 ### 2) Setup 
 
